@@ -14,4 +14,4 @@ Una vez instalado el sistema operativo Linux, se instalaron los demás programas
 
 A continucación se tomará una evidencia de las aplicaciones ya instaladas, ya que en el proceso de instalación no fueron tomadas.
 
-![Visual](Imágenes/Visual Studio Code1.png) 
+![Visual](Imágenes/VisualStudioCode1.jpeg) 
