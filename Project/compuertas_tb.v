@@ -1,5 +1,5 @@
-'include' "compuertas.v"
-'timescale lps/lps
+`include "Compuertas.v"
+`timescale 1ps/1ps
 
 module tb_compuertas();
 
@@ -18,32 +18,35 @@ module tb_compuertas();
         .S2(S2_tb)
     );
 
-initial begin
-    A_tb = 0 ;
-    B_tb = 0 ;
-    C_tb = 0;
+    initial begin
+        A_tb = 0;
+        B_tb = 0;
+        C_tb = 0;
 
-    #100;
+        #100;
 
-    A_tb = 0;
-    B_tb = 1;
-    C_tb =1;
+        A_tb = 0;
+        B_tb = 1;
+        C_tb = 1;
 
-    #100;
+        #100;
 
-    A_tb = 1;
-    B_tb = 0;
+        A_tb = 1;
+        B_tb = 0;
 
-    #100;
+        #100;
 
-    A_tb = 1;
-    B_tb = 1;
+        A_tb = 1;
+        B_tb = 1;
 
-end
+    end
 
 
-initial begin
-    $dumpfile("compuertas.vcd");
-    $dumpvars(-l, uut);
-    #500 $finish;
-end
+    initial begin
+
+        $dumpfile("Compuertas.vcd");
+        $dumpvars(-1, uut);
+        #500 $finish;
+    end
+
+endmodule
