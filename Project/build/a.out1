@@ -1,6 +1,13 @@
-**** module/scope: Compuertas
+**** module/scope: tb_compuertas
      Flip-Flops   : 0
-     Logic Gates  : 2
+     Logic Gates  : 0
+     LOG[13]: 1 unaccounted
+     LOG[14]: 1 unaccounted
+**** module/scope: tb_compuertas.uut
+     Flip-Flops   : 0
+     Logic Gates  : 4
 **** TOTALS
      Flip-Flops   : 0
-     Logic Gates  : 2
+     Logic Gates  : 4
+     LOG[13]: 1 unaccounted
+     LOG[14]: 1 unaccounted

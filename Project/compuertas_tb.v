@@ -26,18 +26,41 @@ module tb_compuertas();
         #100;
 
         A_tb = 0;
-        B_tb = 1;
+        B_tb = 0;
         C_tb = 1;
 
         #100;
 
-        A_tb = 1;
-        B_tb = 0;
+        A_tb = 0;
+        B_tb = 1;
+        C_tb = 0;
+
 
         #100;
 
+        A_tb = 0;
+        B_tb = 1;
+        C_tb = 1;
+        
+        #100
+
+        A_tb = 1;
+        B_tb = 0;
+        C_tb = 0;
+
+        #100
+
+        A_tb = 1;
+        B_tb = 0;
+        C_tb = 1;
+
+        #100
+
         A_tb = 1;
         B_tb = 1;
+        C_tb = 1;
+
+
 
     end
 
@@ -46,7 +69,7 @@ module tb_compuertas();
 
         $dumpfile("Compuertas.vcd");
         $dumpvars(-1, uut);
-        #500 $finish;
+        #800 $finish;
     end
 
 endmodule
