@@ -17,8 +17,8 @@ Pasos:
 
 ### Videos de funcionamiento
 
-- [Video del sumador de 1 bit](enlace1)
-- [Video del sumador de 4 bits](enlace2)
+- [Video del sumador de 1 bit](https://youtu.be/z3Zq9_oTAwk)
+- [Video del sumador de 4 bits](https://youtu.be/BzLvn75Jiqs)
 
 ### Imágenes
 
