@@ -131,7 +131,7 @@ endmodule
 
 
 
-2. Desarrollo circuito punto 2:
+1. Desarrollo circuito punto 2:
 * código *compuertas.v*:
 
 ```verilog

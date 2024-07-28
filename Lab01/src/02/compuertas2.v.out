@@ -1,0 +1,39 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000001c57ac36100 .scope module, "compuertas2" "compuertas2" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /INPUT 1 "C";
+    .port_info 3 /OUTPUT 1 "S1";
+    .port_info 4 /OUTPUT 1 "C0";
+o000001c57aa96eb8 .functor BUFZ 1, C4<z>; HiZ drive
+o000001c57aa96ee8 .functor BUFZ 1, C4<z>; HiZ drive
+L_000001c57ac36ba0 .functor XOR 1, o000001c57aa96eb8, o000001c57aa96ee8, C4<0>, C4<0>;
+o000001c57aa96f18 .functor BUFZ 1, C4<z>; HiZ drive
+L_000001c57ac3e810 .functor XOR 1, L_000001c57ac36ba0, o000001c57aa96f18, C4<0>, C4<0>;
+L_000001c57ac3e880 .functor XOR 1, o000001c57aa96eb8, o000001c57aa96ee8, C4<0>, C4<0>;
+L_000001c57ac3e8f0 .functor AND 1, L_000001c57ac3e880, o000001c57aa96f18, C4<1>, C4<1>;
+L_000001c57ac3e960 .functor AND 1, o000001c57aa96eb8, o000001c57aa96ee8, C4<1>, C4<1>;
+L_000001c57ac3e9d0 .functor OR 1, L_000001c57ac3e8f0, L_000001c57ac3e960, C4<0>, C4<0>;
+v000001c57ac36980_0 .net "A", 0 0, o000001c57aa96eb8;  0 drivers
+v000001c57ac36290_0 .net "B", 0 0, o000001c57aa96ee8;  0 drivers
+v000001c57ac36330_0 .net "C", 0 0, o000001c57aa96f18;  0 drivers
+v000001c57ac363d0_0 .net "C0", 0 0, L_000001c57ac3e9d0;  1 drivers
+v000001c57ac36470_0 .net "S1", 0 0, L_000001c57ac3e810;  1 drivers
+v000001c57ac3e180_0 .net *"_ivl_0", 0 0, L_000001c57ac36ba0;  1 drivers
+v000001c57ac3e220_0 .net *"_ivl_4", 0 0, L_000001c57ac3e880;  1 drivers
+v000001c57ac3e6d0_0 .net *"_ivl_6", 0 0, L_000001c57ac3e8f0;  1 drivers
+v000001c57ac3e770_0 .net *"_ivl_8", 0 0, L_000001c57ac3e960;  1 drivers
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "compuertas2.v";

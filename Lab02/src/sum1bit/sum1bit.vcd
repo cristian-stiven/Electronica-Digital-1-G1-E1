@@ -1,0 +1,72 @@
+$date
+	Sat Jul 27 18:50:58 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module sum1bit_tb $end
+$scope module uut $end
+$var wire 1 ! a $end
+$var wire 1 " and1 $end
+$var wire 1 # and2 $end
+$var wire 1 $ b $end
+$var wire 1 % ci $end
+$var wire 1 & co $end
+$var wire 1 ' s $end
+$var wire 1 ( xor1 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#100
+1'
+1(
+1$
+#200
+0$
+1!
+#300
+0'
+1&
+0(
+1#
+1$
+#400
+0&
+1'
+0#
+1%
+0$
+0!
+#500
+1&
+1"
+0'
+1(
+1$
+#600
+0$
+1!
+#700
+0"
+1'
+0(
+1#
+1$
+#800

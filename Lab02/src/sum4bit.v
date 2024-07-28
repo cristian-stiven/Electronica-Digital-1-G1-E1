@@ -1,4 +1,4 @@
-//`include "sum1bit.v"
+`include "sum1bit/sum1bit.v"
 
 module sum4b(A, B, Ci, S, Co);
 

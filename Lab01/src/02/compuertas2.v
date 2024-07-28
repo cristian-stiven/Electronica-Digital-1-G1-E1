@@ -4,28 +4,17 @@ module compuertas2(
     input A,
     input B, 
     input C,
-    input V1,
-    input V2, 
-    input V3,
 
-    //Salidas de las compuertas y del sistema, S2 pertence a Co
+    //Salidas de las compuertas y del sistema, C0 pertence a Co
     output S1,
-    output S2,
-    output V12,
-    output V22,
-    output V32
+    output C0
     );
 
     //Asiganmos los valores teniendo en cuenta que creamos una igualdad para dos variables
     //representan una salida y una entrada de una compuerta
 
-    assign V12= A ^ B;
-    assign V22= A & B ;
-    assign S1= V1 ^ C;
-    assign V32= V1 & C;
-    assign S2= V2 | V3;
-    assign V1= V12;
-    assign V2= V22;
-    assign V3= V32;
+    assign S1 = (A^B)^C;
+    assign C0 = ((A^B)&C)|(A&B);
+
 
 endmodule
