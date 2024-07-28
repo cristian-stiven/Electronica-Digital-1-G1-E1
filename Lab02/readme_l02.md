@@ -30,5 +30,23 @@ Pasos:
 
 ### Capturas de pantalla de la simulación
 
-1. Simulacion de la suma de 4 bit
-- ![Simulación](Imagenes/simulacion.png)
+1. Simulación de la suma de 1 bit
+   ![Simulación](Imagenes/1bit_sim.png)
+
+   Para la simulación del sumador de 1 Bit podemos ver el estado [1 o 0] para cada una de las entradas, las compuertas, los carry y las salidas del sumador donde:
+
+   * Verde para las entradas *a* y *b*.
+   * Amarillo para la compuerta XOR (XOR entre a y b).
+   * Rojo para las compuertas *and* (And1:entre XOR y Carry de entrada. And2: entre a y b).
+   * Morado tanto para carry de salida como la salida misma.
+
+2. Simulacion de la suma de 4 bit
+- ![Simulación](Imagenes/4bit_sim.png)
+
+Para la simulación del sumador de 4 Bits podemos ver el lo siguiente
+
+   * Verde estado [1 o 0] para cada una de las entradas A y B individuales (sombreado) aligual que la y las salidas, y a su vez una vista compacta y general con valores decimales con los que podríamos corroborar la suma.
+   * Anaranjado para el Carry de entrada.
+   * Morado, amarillo y rojo para el Carry 1, 2 y 3, respectivamente.
+   * Azul para el carry de salida.
+
