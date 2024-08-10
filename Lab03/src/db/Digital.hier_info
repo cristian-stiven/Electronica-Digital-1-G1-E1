@@ -1,0 +1,54 @@
+|sum3b
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+Ci => ~NO_FANOUT~
+SSeg[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+an[0] <= <VCC>
+an[1] <= <VCC>
+an[2] <= <VCC>
+an[3] <= <GND>
+
+
+|sum3b|sum1b:sum0
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+ci => and1.IN1
+ci => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sum3b|sum1b:sum1
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+ci => and1.IN1
+ci => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sum3b|sum1b:sum2
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+ci => and1.IN1
+ci => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+
+
