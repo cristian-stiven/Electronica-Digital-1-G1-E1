@@ -1,4 +1,4 @@
-//`include "Sum1b.v"
+`include "Sum1b.v"
 
 module sum3b(A, B, Ci, SSeg, an);
 
@@ -21,8 +21,8 @@ sum1b sum2(.a(A[2]), .b(B[2]), .ci(C2), .s(S[2]), .co(S[3]));
 always @ ( * ) begin
   case (S)
 
-                         // abcdefg
-         4'b0000: SSeg = 7'b0000001; // "0"  
+   // abcdefg
+   4'b0000: SSeg = 7'b0000001; // "0"  
 	 4'b0001: SSeg = 7'b1001111; // "1" 
 	 4'b0010: SSeg = 7'b0010010; // "2" 
 	 4'b0011: SSeg = 7'b0000110; // "3" 

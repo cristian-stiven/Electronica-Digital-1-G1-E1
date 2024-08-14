@@ -1,4 +1,4 @@
-//`include "Sum3b.v"
+include "Sum3b.v"
 
 module BCDtoSSeg (BCD, SSeg, an);
 
@@ -14,8 +14,8 @@ module BCDtoSSeg (BCD, SSeg, an);
 always @ ( * ) begin
   case (BCD)
 
-                         // abcdefg
-         4'b0000: SSeg = 7'b0000001; // "0"  
+   // abcdefg
+   4'b0000: SSeg = 7'b0000001; // "0"  
 	 4'b0001: SSeg = 7'b1001111; // "1" 
 	 4'b0010: SSeg = 7'b0010010; // "2" 
 	 4'b0011: SSeg = 7'b0000110; // "3" 
