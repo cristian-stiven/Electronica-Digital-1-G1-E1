@@ -21,7 +21,15 @@ module Crono (sdcm, SSeg, an);
         an_reg=4'b1110; //Muestra solo los segundos por default.
     endcase
     
+    /******************************************************************************
+    Hace falta:
+    * hacer los contadores de tiempo usando las salidas del código incluido al inicio
+    * incluir la salida inicial f_div, para que haga el envio alternado a los 4 7seg 
+      (para que se vean numeros diferentes).
+    * el conversor de los contadores a los 7seg.
 
+    Borrar esto cuando se realice
+    *******************************************************************************/
 
     
 
