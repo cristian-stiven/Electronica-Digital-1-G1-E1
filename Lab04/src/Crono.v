@@ -18,7 +18,7 @@ module Crono (sdcm, SSeg, an);
         2'b10: an_reg = 4'b1000; //Centisegundos (se encienden 3 7seg)
         2'b11: an_reg = 4'b0000; //Milisegundos (se encienden los 4 7seg )
         default:
-        an_reg=4'b1110; //Muestra solo los segundos por default.
+        an_reg=4'b1110; //Muestra solo los segundos p|or default.
     endcase
     
     /******************************************************************************
