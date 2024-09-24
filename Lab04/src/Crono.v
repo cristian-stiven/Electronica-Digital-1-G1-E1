@@ -29,7 +29,7 @@ module Crono (sdcm, SSeg, an);
     * incluir la salida inicial f_div, para que haga el envio alternado a los 4 7seg 
       (para que se vean numeros diferentes).
     * el conversor de los contadores a los 7seg.
-    *incluir el sumador de 3 bits e implementarlo dentro del código.
+    
 
     Borrar esto cuando se realice
     *******************************************************************************/
