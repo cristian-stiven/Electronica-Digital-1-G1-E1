@@ -1,0 +1,81 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000002146aeb9870 .scope module, "Leds" "Leds" 2 4;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "reset";
+    .port_info 2 /INPUT 3 "cmd";
+    .port_info 3 /OUTPUT 3 "leds";
+P_000002146aeb9a00 .param/l "CLK_FREQ" 0 2 12, +C4<00000010111110101111000010000000>;
+P_000002146aeb9a38 .param/l "COUNT_MAX" 1 2 14, +C4<0000000000000000000000000000000001011001011010000010111100000000>;
+P_000002146aeb9a70 .param/l "LED_TOGGLE_TIME" 0 2 13, +C4<00000000000000000000000000011110>;
+o000002146af06fb8 .functor BUFZ 1, C4<z>; HiZ drive
+v000002146aeb6a40_0 .net "clk", 0 0, o000002146af06fb8;  0 drivers
+o000002146af06fe8 .functor BUFZ 3, C4<zzz>; HiZ drive
+v000002146aeb67e0_0 .net "cmd", 2 0, o000002146af06fe8;  0 drivers
+v000002146aeb6c60_0 .var "counter", 31 0;
+v000002146aeb9ab0_0 .var "leds", 2 0;
+o000002146af07078 .functor BUFZ 1, C4<z>; HiZ drive
+v000002146aeb9b50_0 .net "reset", 0 0, o000002146af07078;  0 drivers
+v000002146af49820_0 .var "toggle", 0 0;
+E_000002146af064a0 .event posedge, v000002146aeb9b50_0, v000002146aeb6a40_0;
+    .scope S_000002146aeb9870;
+T_0 ;
+    %wait E_000002146af064a0;
+    %load/vec4 v000002146aeb9b50_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %pushi/vec4 0, 0, 3;
+    %assign/vec4 v000002146aeb9ab0_0, 0;
+    %pushi/vec4 0, 0, 32;
+    %assign/vec4 v000002146aeb6c60_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v000002146af49820_0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v000002146aeb6c60_0;
+    %pad/u 64;
+    %cmpi/u 1499999999, 0, 64;
+    %jmp/0xz  T_0.2, 5;
+    %load/vec4 v000002146aeb6c60_0;
+    %addi 1, 0, 32;
+    %assign/vec4 v000002146aeb6c60_0, 0;
+    %jmp T_0.3;
+T_0.2 ;
+    %pushi/vec4 0, 0, 32;
+    %assign/vec4 v000002146aeb6c60_0, 0;
+    %load/vec4 v000002146af49820_0;
+    %inv;
+    %assign/vec4 v000002146af49820_0, 0;
+T_0.3 ;
+    %load/vec4 v000002146af49820_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.4, 8;
+    %pushi/vec4 7, 0, 3;
+    %assign/vec4 v000002146aeb9ab0_0, 0;
+    %jmp T_0.5;
+T_0.4 ;
+    %pushi/vec4 0, 0, 3;
+    %assign/vec4 v000002146aeb9ab0_0, 0;
+T_0.5 ;
+    %load/vec4 v000002146aeb67e0_0;
+    %cmpi/ne 0, 0, 3;
+    %jmp/0xz  T_0.6, 4;
+    %load/vec4 v000002146aeb67e0_0;
+    %assign/vec4 v000002146aeb9ab0_0, 0;
+T_0.6 ;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "Leds.v";
