@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Sep 24 17:34:41 2024
+Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Revision Name : CasaDomo
+Top-level Entity Name : House
+Family : Cyclone IV E
+Device : EP4CE10E22C8
+Timing Models : Final
+Total logic elements : 203 / 10,320 ( 2 % )
+    Total combinational functions : 181 / 10,320 ( 2 % )
+    Dedicated logic registers : 120 / 10,320 ( 1 % )
+Total registers : 120
+Total pins : 13 / 92 ( 14 % )
+Total virtual pins : 0
+Total memory bits : 0 / 423,936 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

@@ -1,0 +1,14 @@
+
+State Machine - |House|BTt:transmitter|state
+Name state.SEND_STOP state.SEND_DATA state.SEND_START state.IDLE 
+state.IDLE 0 0 0 0 
+state.SEND_START 0 0 1 1 
+state.SEND_DATA 0 1 0 1 
+state.SEND_STOP 1 0 0 1 
+
+State Machine - |House|BTr:receiver|state
+Name state.RECEIVE_STOP state.RECEIVE_DATA state.RECEIVE_START state.IDLE 
+state.IDLE 0 0 0 0 
+state.RECEIVE_START 0 0 1 1 
+state.RECEIVE_DATA 0 1 0 1 
+state.RECEIVE_STOP 1 0 0 1 
