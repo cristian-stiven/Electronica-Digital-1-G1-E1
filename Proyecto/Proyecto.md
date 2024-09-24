@@ -18,11 +18,12 @@ El proceso de fabricacion se comenzo haciendo con una lluvia de ideas la cual se
 
 Al diseñar el circuito del motor se encontro un error en la alimentacion ya que la tarjeta no puede brindar la tension necesaria para el motor que se habia escogido al principio (necesita 8 V para un correcto funcionamiento) por lo cual se decidio escoger un circuito subsecuente el cual iba contener dos relés uno para cada direccion este iba a tener una alimentacion aparte brindada por una pila de 9 V antes de probar su funcionamiento verificamos si teoricamente se iba hacer una buena interconeccion entre la FPGA y los reles haciendo esta prueba se encontro que los relés debian ser del mismo valor de la alimentacion que nos brinda la salida de la FPGA en este caso 3V se intento conseguir de ese valor pero desafortunadamente  no era un valor comercial, La solucion para ello fue cambiar de motor a un moto vibrador miniatura el cual funciona a la perfeccion con los 3 V de la tarjeta FPGA.
 
+Para verificar la ejecucion del codigo se elaboro una aplicacion android con los plugins necesarios para emular el funcionamiento del proyecto por ejemplo en la interfaz del motor hay dos botones los cuales se utilizaran para subir y bajar persianas, en la interfaz de los leds hay tres botones correspondiendo cada uno a un led para asi poder encenderlo.
 
 ### Diagrama de procesos
 ![Diagrama de flujo proceso codigo implementado](Imagenes/DiagramaFlujo.png)
 
-En la anterior imagen se detaalla el funcionamiento del proyecto en un esquema de bloques en el cual explicare con mas brevedad.
+En la anterior imagen se detalla el funcionamiento del proyecto en un esquema de bloques en el cual explicare con mas brevedad.
 
 - Modulo Controlador (House.v.): Es el encargado de recibir las tareas y redistribuirlas en los diferentes modulos.
 - Modulo Bluethooth Recepcion (BTr.v.): Es el encargado de recibir los datos desde la aplicacion a la FPGA y transmitirlo al modulo controlador.
