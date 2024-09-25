@@ -42,15 +42,25 @@ Para verificar la ejecucion del codigo se elaboro una aplicacion android con los
 #### Modulo Motor:
 ![Simulacion de Motor](Imagenes/TestBenchMotor.jpeg)
 
+En la simulacion estan actuando 6 señales principales las cuales la primera de ellas es el reloj para activar motor UP y DOWN se hace con los flancos de subida de la señal cmd [1:0] la cual viene desde la aplicacion, las señales de TopeA y TopeB cuando se activan apagan las señales de motor UP y DOWN.
+
 #### Modulo Leds:
 ![Simulacion de leds](Imagenes/TestBenchLeds.jpeg)
+
+En la imagen se evidencia tres señales principales, el reloj, cmd [2:0] que es la señal que viene desde la aplicacion pasando por el modulo de control y esta activa una señal que prende los leds llamada leds[2:0]
 
 #### Modulo Move:
 ![Simulacion De Movimiento](Imagenes/TestBenchMovimiento.jpeg)
 
+En el modulo de movimiento  actuan tres señales, el clk que es el reloj, motion_detected que se activa cuando el sensor detecta movimiento y esta el buzzer que es la señal que activara en este caso el parlante que nos indicara que hay un movimiento cerca del sensor para evitar el ruido esta señal se activara despues de 50 ns de constante movimiento.
+
 #### Modulo De Bluethooth transmision:
 ![Simulacion De Bluethooth](Imagenes/TestBenchMBTt.jpeg)
 
+La simulacion actuan 5 señales sin contar el reloj en ellas, el buzzer como tal siempre va estar activo ya que el no maneja un codigo activador como tal si no que siempre esta prendido para recibir señales de proximidad y ya el data_in [7:0] es la encargada de transmitir a la aplicacion el estador de los leds y la activacion de los topes.
+
 #### Modulo De Bluethooth recepcion:
 ![Simulacion De Bluethooth](Imagenes/TestBenchMBTr.jpeg)
+
+La simulacion actuan 4 señales sin contar el reloj en ellas se encuentra data_out[7:0] esta se encarga de recibir las ordenes desde la aplicacion como tal no se recibe ninguna orden como se muestra en la simulacion la señal RX es la que se envia al modulo controlador para asi el poderla retransmitir.
 
