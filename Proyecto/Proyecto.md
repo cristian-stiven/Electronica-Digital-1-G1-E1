@@ -57,7 +57,7 @@ En el modulo de movimiento  actuan tres señales, el clk que es el reloj, motion
 #### Modulo De Bluethooth transmision:
 ![Simulacion De Bluethooth](Imagenes/TestBenchMBTt.jpeg)
 
-La simulacion actuan 5 señales sin contar el reloj en ellas, el buzzer como tal siempre va estar activo ya que el no maneja un codigo activador como tal si no que siempre esta prendido para recibir señales de proximidad y ya el data_in [7:0] es la encargada de transmitir a la aplicacion el estador de los leds y la activacion de los topes.
+La simulacion actuan 5 señales sin contar el reloj en ellas,la señal llamada bussy es la encargada de mostrar cuando esta recibiendo una señak para poderla enviar asi que no va recibir mas señales durante ese lapso de tiempo que este activa y ya el data_in [7:0] es la encargada de transmitir a la aplicacion el estador de los leds y la activacion de los topes.
 
 #### Modulo De Bluethooth recepcion:
 ![Simulacion De Bluethooth](Imagenes/TestBenchMBTr.jpeg)
