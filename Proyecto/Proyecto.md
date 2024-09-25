@@ -16,9 +16,8 @@ Se utilizaron los siguientes componentes electronicos:
   
 El proceso de fabricacion se comenzo haciendo con una lluvia de ideas la cual se obtuvo como resultado la estructura general del proyecto, y los modulos los cuales se iban a utilizar, por consiguiente dividimos el trabajo por modulo ya que se iba a obtener mayor eficiencia del trabajo, pero por el contrario no se obtuvo un buen rendimiento individual por complicaciones en la delegacion del proyecto.
 
-Al diseñar el circuito del motor se encontro un error en la alimentacion ya que la tarjeta no puede brindar la tension necesaria para el motor que se habia escogido al principio (necesita 8 V para un correcto funcionamiento) por lo cual se decidio escoger un circuito subsecuente el cual iba contener dos relés uno para cada direccion este iba a tener una alimentacion aparte brindada por una pila de 9 V antes de probar su funcionamiento verificamos si teoricamente se iba hacer una buena interconeccion entre la FPGA y los reles haciendo esta prueba se encontro que los relés debian ser del mismo valor de la alimentacion que nos brinda la salida de la FPGA en este caso 3V se intento conseguir de ese valor pero desafortunadamente  no era un valor comercial, La solucion para ello fue cambiar de motor a un moto vibrador miniatura el cual funciona a la perfeccion con los 3 V de la tarjeta FPGA.
+Al diseñar el circuito del motor se encontro un error en la alimentacion ya que la tarjeta brinda la tension necesaria para el motor escogido al principio del proyecto(necesita 8 V para un correcto funcionamiento) por lo cual se decidio escoger un circuito subsecuente el cual iba contener dos relés uno para cada direccion este iba a tener una alimentacion aparte brindada por una pila de 9 V. Antes de probar su funcionamiento verificamos si teoricamente se iba hacer una buena interconeccion entre la FPGA y los reles haciendo esta prueba se encontro que los relés debian ser del mismo valor de la alimentacion que nos brinda la salida de la FPGA en este caso 3V se intento conseguir de ese valor pero desafortunadamente no era un valor comercial, La solucion para ello fue cambiar de motor a un moto vibrador miniatura el cual funciona a la perfeccion con los 3 V de la tarjeta FPGA.
 
-Para verificar la ejecucion del codigo se elaboro una aplicacion android con los plugins necesarios para emular el funcionamiento del proyecto por ejemplo en la interfaz del motor hay dos botones los cuales se utilizaran para subir y bajar persianas, en la interfaz de los leds hay tres botones correspondiendo cada uno a un led para asi poder encenderlo.
 
 ### Diagrama de procesos
 ![Diagrama de flujo proceso codigo implementado](Imagenes/DiagramaFlujo.png)
@@ -31,6 +30,10 @@ En la anterior imagen se detalla el funcionamiento del proyecto en un esquema de
 - Modulo Motor (Motor.v.): Recibe la Señal del modulo controlador el cual le ordenara girar a la izquierda o a la derecha depende de los datos recibidos.
 - Modulo leds (Leds.v.): Recibe ordenes de encendidos o apagados con diferentes secuencias para asi prender con un orden especifico los leds.
 - Modulo Movimiento (Move.v.): Detecta movimiento el cual activara una señal que se enviara a la tarjeta FPGA para asi activar un buzzer (actua como intermediario).
+
+Para verificar la ejecucion del codigo se elaboro una aplicacion android con los plugins necesarios para emular el funcionamiento del proyecto por ejemplo en la interfaz del motor hay dos botones los cuales se utilizaran para subir y bajar persianas, en la interfaz de los leds hay tres botones correspondiendo cada uno a un led para asi poder encenderlo. La logica que se utilizo para la aplicacion se demuestra en la siguiente imagen.
+
+![Logica De Aplicacion](Imagenes/LogicaDeAplicacion.jpeg)
 
 
 
@@ -51,9 +54,3 @@ En la anterior imagen se detalla el funcionamiento del proyecto en un esquema de
 #### Modulo De Bluethooth recepcion:
 ![Simulacion De Bluethooth](Imagenes/TestBenchMBTr.jpeg)
 
-### Resultados
-
-
-##
-
-###
