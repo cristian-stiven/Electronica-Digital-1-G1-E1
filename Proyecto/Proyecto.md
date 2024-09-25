@@ -31,6 +31,11 @@ En la anterior imagen se detalla el funcionamiento del proyecto en un esquema de
 - Modulo leds (Leds.v.): Recibe ordenes de encendidos o apagados con diferentes secuencias para asi prender con un orden especifico los leds.
 - Modulo Movimiento (Move.v.): Detecta movimiento el cual activara una señal que se enviara a la tarjeta FPGA para asi activar un buzzer (actua como intermediario).
 
+### Diagrama de estados 
+![Diagrama de estados](Imagenes/Diagrama.png)
+
+
+
 Para verificar la ejecucion del codigo se elaboro una aplicacion android con los plugins necesarios para emular el funcionamiento del proyecto por ejemplo en la interfaz del motor hay dos botones los cuales se utilizaran para subir y bajar persianas, en la interfaz de los leds hay tres botones correspondiendo cada uno a un led para asi poder encenderlo. La logica que se utilizo para la aplicacion se demuestra en la siguiente imagen.
 
 ![Logica De Aplicacion](Imagenes/LogicaDeAplicacion.jpeg)
