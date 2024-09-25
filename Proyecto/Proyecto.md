@@ -37,10 +37,21 @@ En la anterior imagen se detalla el funcionamiento del proyecto en un esquema de
 ### Simulaciones
 
 #### Modulo Motor:
-#### Modulo Leds:
-#### Modulo Move:
+![Simulacion de Motor](Imagenes/TestBenchMotor.jpeg)
 
-#### Resultados
+#### Modulo Leds:
+![Simulacion de leds](Imagenes/TestBenchLeds.jpeg)
+
+#### Modulo Move:
+![Simulacion De Movimiento](Imagenes/TestBenchMovimiento.jpeg)
+
+#### Modulo De Bluethooth transmision:
+![Simulacion De Bluethooth](Imagenes/TestBenchMBTt.jpeg)
+
+#### Modulo De Bluethooth recepcion:
+![Simulacion De Bluethooth](Imagenes/TestBenchMBTr.jpeg)
+
+### Resultados
 
 
 ##
