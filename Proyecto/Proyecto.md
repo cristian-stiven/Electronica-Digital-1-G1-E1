@@ -35,12 +35,15 @@ En la anterior imagen se detalla el funcionamiento del proyecto en un esquema de
 ![Diagrama de estados](Imagenes/Diagrama.png)
 
 
+### Aplicacion
 
 Para verificar la ejecucion del codigo se elaboro una aplicacion android con los plugins necesarios para emular el funcionamiento del proyecto por ejemplo en la interfaz del motor hay dos botones los cuales se utilizaran para subir y bajar persianas, en la interfaz de los leds hay tres botones correspondiendo cada uno a un led para asi poder encenderlo. La logica que se utilizo para la aplicacion se demuestra en la siguiente imagen.
 
 ![Logica De Aplicacion](Imagenes/LogicaDeAplicacion.jpeg)
 
+Despues de verificar la logica de la aplicacion se desarrollo una interfaz basica la cual servira solo para implementar el proyecto y esto se visualizaria asi:
 
+![Interfaz de la aplicacion](Imagenes/Programa2.jpeg)
 
 ### Simulaciones
 
